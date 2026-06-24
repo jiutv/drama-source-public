@@ -1,0 +1,60 @@
+{
+    "category_rules": [
+        {"keys": ["玄幻", "修仙", "修真", "仙侠", "穿越", "异界", "灵根"], "name": "玄幻仙侠"},
+        {"keys": ["都市", "豪门", "爱情", "婚姻", "职场", "婆媳"], "name": "都市情感"},
+        {"keys": ["逆袭", "赘婿", "首富", "复仇", "打脸", "崛起"], "name": "逆袭爽剧"},
+        {"keys": ["民国", "历史", "古代", "宫廷", "王爷", "陛下"], "name": "历史古装"},
+        {"keys": ["刑侦", "破案", "悬疑", "凶案", "法医"], "name": "悬疑"},
+        {"keys": ["末世", "末日", "科幻", "星际"], "name": "科幻末世"},
+        {"keys": ["家庭", "伦理", "亲情", "育儿"], "name": "家庭"},
+        {"keys": ["战争"], "name": "战争"},
+        {"keys": ["励志"], "name": "励志"},
+        {"keys": ["恐怖"], "name": "恐怖"},
+        {"keys": ["热血"], "name": "热血"},
+        {"keys": ["搞笑"], "name": "搞笑"},
+        {"keys": ["甜宠"], "name": "甜宠"},
+        {"keys": ["宫廷", "权谋"], "name": "宫廷权谋"},
+        {"keys": ["总裁"], "name": "总裁"}
+    ],
+    "default_category": "热门短剧",
+    "site_configs": [
+        {
+            "name": "kdj.one",
+            "url": "https://kdj.one",
+            "card_selector": "div.video-card",
+            "link_type": "onclick",
+            "title_selector": "div.video-info",
+            "img_selector": "div.video-poster img",
+            "next_page_selector": "a:contains(下一页)",
+            "category_pages": [
+                "https://kdj.one",
+                "https://kdj.one/sort/nanhang",
+                "https://kdj.one/sort/nvhang"
+            ],
+            "search_api": ""
+        },
+        {
+            "name": "oupudj.cc",
+            "url": "https://oupudj.cc",
+            "card_selector": "div.grid > div.inline-flex",
+            "link_type": "href",
+            "title_selector": "a",
+            "img_selector": "img",
+            "next_page_selector": "a:contains(下一页)",
+            "category_pages": [
+                "https://oupudj.cc",
+                "https://oupudj.cc",
+                "https://oupudj.cc/sort/chuanyue",
+                "https://oupudj.cc/sort/xuanyi"
+            ],
+            "search_api": "https://oupudj.cc/search?wd={keyword}"
+        }
+    ],
+    "global": {
+        "detail_dir": "detail",
+        "repo_name": "drama-source-public",
+        "github_user": "jiutv",
+        "search_words": ["重生", "萌宝", "神医", "龙王", "战神", "闪婚", "替嫁"],
+        "max_page": 100
+    }
+}
